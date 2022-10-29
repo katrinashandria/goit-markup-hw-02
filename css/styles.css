@@ -130,3 +130,9 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+/*------------------footer-------------*/
+
+.footer {
+    background-color: var(--accent-color);
+}
