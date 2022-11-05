@@ -1,13 +1,16 @@
 :root {
-    --accent-color: #2F303A;
+    --accent-color: #2196F3;;
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
-    --main-background-color: #F5F5F5;
+    --main-background-color: #ffffff;
+    --secondary-background-color: #2F303A;
 }
 
 
 body {
     font-family: "Roboto";
+    font-size: 14px;
+    letter-spacing: 0.03 em;
     color:var(--primary-text-color);
     background-color:var(--mail-background-color);
 }
@@ -36,17 +39,16 @@ li.nav-item {
 }
 .nav-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .logo {
+    font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+    line-height: calc(31/26);
     color: #000000;
 }
 
@@ -64,20 +66,27 @@ li.nav-item {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
     cursor: pointer;
 }
 
 .header-phone {
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--secondary-text-color);
+}
+
+.header-mail:hover, .header-mail:focus {
+    color: var(--accent-color);
+}
+
+.header-phone:hover, .header-phone:focus {
+    color: var(--accent-color);
 }
 
 .header-button {
@@ -121,11 +130,11 @@ li.nav-item {
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--secondary-text-color);
 }
 
 .hero {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-background-color);
 }
 
 .hero-name {
@@ -135,88 +144,83 @@ li.nav-item {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--main-background-color);
 }
 
 /* -----------------what we do----------------- */
 
-.servise-title {
+.service-title {
     font-weight: 700;
-    font-size: 14px;
     line-height: calc(16/14);
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--primary-text-color);
 }
 
 .service-description {
-    font-weight: 400;
-    font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color:var(--secondary-text-color);
 }
 
-.h2 {
-    font-weight: 700;
+.section-title {
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .project-title {
-    font-weight: 700;
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
-    color: #212121;
 }
 
 .project-type-title {
-    font-weight: 400;
     font-size: 16px;
     line-height: calc(30/16);
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 /* --------------------our team------------- */
 
-.names {
+.team-names {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
 }
 
-.profession {
+.team-position {
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 /*------------------footer-------------*/
 
 .footer {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-background-color);
 }
 
 .address {
-    font-size: 14px;
     line-height: 1.74;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--main-background-color);
+}
+
+.address:hover, .address:focus {
+color: var(--accent-color);
+}
+
+.footer-mail:hover, .footer-mail:focus {
+    color: var(--accent-color);
+} 
+
+.footer-phone:hover, .footer-phone:focus {
+    color: var(--accent-color);
 }
 
 .footer-mail {
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
